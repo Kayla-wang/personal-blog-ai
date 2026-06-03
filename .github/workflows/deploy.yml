@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
@@ -25,7 +25,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to server
+      - name: Deploy static site to server
         uses: easingthemes/ssh-deploy@v4
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -34,3 +34,15 @@ jobs:
           SOURCE: build/
           TARGET: /var/www/blog
           ARGS: '-avz --delete'
+
+      - name: Deploy API and restart
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/blog-api
+            git pull origin main 2>/dev/null || echo "Not a git repo, skipping pull"
+            npm install --production
+            pm2 reload blog-api || pm2 start ecosystem.config.cjs

@@ -32,12 +32,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: 'notes',
         },
-        blog: {
-          showReadingTime: true,
-          blogSidebarTitle: '全部文章',
-          blogSidebarCount: 'ALL',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -45,18 +42,29 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'projects',
+        path: 'projects',
+        routeBasePath: 'projects',
+        sidebarPath: './sidebarsProjects.js',
+      },
+    ],
+  ],
+
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      /** @type {any} */
       ({
         hashed: true,
         language: ['en', 'zh'],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        docsRouteBasePath: '/docs',
-        blogRouteBasePath: '/blog',
-        indexBlog: true,
+        docsRouteBasePath: ['/notes', '/projects'],
+        indexBlog: false,
         indexDocs: true,
       }),
     ],
@@ -75,10 +83,18 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '文档',
+            label: '学习笔记',
           },
-          { to: '/blog', label: '博客', position: 'left' },
-          { to: '/docs/tags', label: '标签', position: 'left' },
+          {
+            to: '/projects',
+            label: '项目实践',
+            position: 'left',
+          },
+          {
+            to: '/notes/tags',
+            label: '标签',
+            position: 'left',
+          },
         ],
       },
       footer: {

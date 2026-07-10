@@ -56,6 +56,23 @@ tags: [工作流, 自动化, 项目]
 | 状态管理 | 有限状态机 (XState) |
 | 消息队列 | Redis + Bull |
 
+## 参考开源项目
+
+| 项目 | 简介 | Star | 技术栈 |
+|------|------|------|--------|
+| [n8n](https://github.com/n8n-io/n8n) | 可视化工作流自动化平台，支持 400+ 集成 | 50k+ | TypeScript |
+| [Flowise](https://github.com/FlowiseAI/Flowise) | 拖拽式 LangChain 流程构建器 | 32k+ | TypeScript |
+| [Langflow](https://github.com/langflow-ai/langflow) | LangChain 可视化编排工具 | 35k+ | Python/React |
+| [Dify](https://github.com/langgenius/dify) | LLMOps 平台，工作流 + RAG + Agent | 55k+ | Python/TypeScript |
+| [Temporal](https://github.com/temporalio/temporal) | 分布式工作流编排引擎 | 12k+ | Go |
+| [Prefect](https://github.com/PrefectHQ/prefect) | 数据工作流编排框架 | 17k+ | Python |
+
+### 学习建议
+
+- **可视化编排**：Flowise/Langflow 适合快速原型，学习流程设计思路
+- **生产级部署**：n8n 架构清晰，自托管方案成熟
+- **分布式任务**：Temporal 是工业级工作流引擎的标杆
+
 ## 设计原则
 
 1. **幂等性**：同一操作多次执行结果一致

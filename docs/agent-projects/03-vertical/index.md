@@ -93,6 +93,43 @@ tags: [垂类智能体, 领域专家, 项目]
            └──────────┘
 ```
 
+## 参考开源项目
+
+### 代码助手类
+
+| 项目 | 简介 | Star | 特点 |
+|------|------|------|------|
+| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | AI 软件工程代理（原 OpenDevin） | 40k+ | 完整开发环境、多模态 |
+| [Aider](https://github.com/paul-gauthier/aider) | 终端 AI 编程助手，Git 集成 | 22k+ | 轻量、实用、增量编辑 |
+| [Continue](https://github.com/continuedev/continue) | VS Code/JetBrains AI 编程插件 | 20k+ | IDE 深度集成 |
+| [Cline](https://github.com/cline/cline) | VS Code AI 编程助手（原 Claude Dev） | 18k+ | 自主任务执行 |
+| [SWE-agent](https://github.com/princeton-nlp/SWE-agent) | 自动解决 GitHub Issue 的代理 | 14k+ | 学术研究、SWE-bench |
+
+### 知识库 / RAG 类
+
+| 项目 | 简介 | Star | 特点 |
+|------|------|------|------|
+| [FastGPT](https://github.com/labring/FastGPT) | 知识库问答系统，可视化编排 | 20k+ | 中文友好、工作流 |
+| [Quivr](https://github.com/QuivrHQ/quivr) | AI 第二大脑，多格式文档支持 | 36k+ | 简洁易用 |
+| [PrivateGPT](https://github.com/zylon-ai/private-gpt) | 本地私有化文档问答 | 54k+ | 隐私优先、本地部署 |
+| [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | 全能型私有文档 LLM 应用 | 28k+ | 多模型支持 |
+| [RAGFlow](https://github.com/infiniflow/ragflow) | 深度文档理解的 RAG 引擎 | 25k+ | 文档解析强、中文优化 |
+
+### 多模态 / 专业领域
+
+| 项目 | 简介 | Star | 特点 |
+|------|------|------|------|
+| [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) | 本地代码解释器，自然语言操作电脑 | 55k+ | 多模态、系统交互 |
+| [MetaGPT](https://github.com/geekan/MetaGPT) | 多 Agent 软件公司模拟 | 45k+ | 角色分工、软件工程流程 |
+| [ChatDev](https://github.com/OpenBMB/ChatDev) | 多 Agent 虚拟软件公司 | 26k+ | 学术研究、流程可视化 |
+| [TaskWeaver](https://github.com/microsoft/TaskWeaver) | 微软数据分析 Agent 框架 | 5k+ | 代码优先、数据分析 |
+
+### 学习建议
+
+- **代码助手入门**：Aider 代码简洁，适合学习核心逻辑
+- **完整产品参考**：FastGPT / Dify 架构完善，适合生产参考
+- **前沿研究**：SWE-agent / MetaGPT 代表学术界最新进展
+
 ## 学习建议
 
 1. **先选一个领域深耕**：不要同时做多个垂类

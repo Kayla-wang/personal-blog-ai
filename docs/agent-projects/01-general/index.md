@@ -31,6 +31,23 @@ tags: [通用智能体, 项目]
 多系统集成   → MCP 协议（工具标准化）
 ```
 
+## 参考开源项目
+
+| 项目 | 简介 | Star | 技术栈 |
+|------|------|------|--------|
+| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 自主任务执行代理，可自动分解目标并执行 | 170k+ | Python |
+| [AgentGPT](https://github.com/reworkd/AgentGPT) | 浏览器中运行的自主 AI 代理 | 32k+ | TypeScript/Next.js |
+| [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) | 开源自主 AI 代理框架，支持多种工具 | 15k+ | Python |
+| [BabyAGI](https://github.com/yoheinakajima/babyagi) | 任务驱动的自主代理，经典入门项目 | 20k+ | Python |
+| [MemGPT](https://github.com/cpacker/MemGPT) | 长期记忆管理的 LLM 代理系统 | 12k+ | Python |
+| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | 自主研究代理，可深度调研任意主题 | 15k+ | Python |
+
+### 学习建议
+
+- **入门推荐**：BabyAGI 代码简洁，适合理解 Agent 循环
+- **进阶参考**：AutoGPT 功能完整，但代码量大
+- **记忆系统**：MemGPT 的分层记忆设计值得学习
+
 ## 学习路径
 
 ```

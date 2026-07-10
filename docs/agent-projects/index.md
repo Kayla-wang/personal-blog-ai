@@ -183,4 +183,32 @@ project-name/
 
 ---
 
+## 热门开源项目速查
+
+> 学习项目架构、设计模式的优质参考
+
+| 项目 | 类型 | Star | 一句话介绍 |
+|------|------|------|-----------|
+| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 通用 Agent | 170k+ | 自主任务执行的标杆项目 |
+| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | 代码助手 | 40k+ | AI 软件工程代理（原 OpenDevin） |
+| [Dify](https://github.com/langgenius/dify) | LLMOps | 55k+ | 工作流 + RAG + Agent 一站式平台 |
+| [n8n](https://github.com/n8n-io/n8n) | 工作流 | 50k+ | 可视化自动化，400+ 集成 |
+| [Aider](https://github.com/paul-gauthier/aider) | 代码助手 | 22k+ | 终端 AI 编程，代码简洁 |
+| [FastGPT](https://github.com/labring/FastGPT) | 知识库 | 20k+ | 中文友好的 RAG 平台 |
+| [MetaGPT](https://github.com/geekan/MetaGPT) | Multi-Agent | 45k+ | 多角色协作软件开发 |
+| [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) | 多模态 | 55k+ | 自然语言操作电脑 |
+
+### 按学习目标选择
+
+| 学习目标 | 推荐项目 | 理由 |
+|----------|----------|------|
+| Agent 基础原理 | BabyAGI | 代码不到 200 行，核心循环清晰 |
+| 完整产品架构 | Dify / FastGPT | 前后端完整，可直接参考 |
+| 代码助手实现 | Aider | 增量编辑、Git 集成设计精巧 |
+| 工作流编排 | Flowise / Langflow | 可视化理解 LangChain 流程 |
+| Multi-Agent | MetaGPT / ChatDev | 角色分工、流程协作模式 |
+| RAG 最佳实践 | RAGFlow | 文档解析、检索优化 |
+
+---
+
 > 💡 **提示**：选择一个感兴趣的领域深耕，比广泛涉猎更有价值。

@@ -1,0 +1,114 @@
+<h2>站点结构方案对比</h2>
+<p class="subtitle">选择一个最符合你学习习惯的组织方式</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>双轨独立制</h3>
+      <p>Python 和 Node.js 两条完整独立的学习路线，各自成体系</p>
+      <div class="mockup" style="margin-top: 12px; padding: 16px; font-size: 13px;">
+        <pre style="margin: 0; font-family: inherit; white-space: pre-wrap;">
+📚 学习笔记
+├── 🐍 Python AI 路线
+│   ├── Python 基础
+│   ├── LLM 基础
+│   ├── Prompt 工程
+│   ├── RAG 技术
+│   ├── LangChain
+│   └── Agent 模式
+│
+└── 🟨 Node.js AI 路线
+    ├── Node.js 后端
+    ├── LLM 基础
+    ├── LangChain.js
+    ├── LangGraph.js
+    └── Agent 核心
+
+🔨 项目实战
+├── 通用智能体
+├── 工作流智能体
+└── 垂类智能体</pre>
+      </div>
+      <div class="pros-cons" style="margin-top: 12px;">
+        <div class="pros"><h4>优点</h4><ul><li>路线清晰，适合从头学</li><li>每条路线自成体系</li></ul></div>
+        <div class="cons"><h4>缺点</h4><ul><li>重复内容多（如 Prompt 工程）</li><li>切换路线时不方便对照</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>主题统一制</h3>
+      <p>按学习主题组织，每个主题下包含 Python 和 JS 两种实现</p>
+      <div class="mockup" style="margin-top: 12px; padding: 16px; font-size: 13px;">
+        <pre style="margin: 0; font-family: inherit; white-space: pre-wrap;">
+📚 学习笔记
+├── 01 基础准备
+│   ├── Python 基础
+│   └── Node.js 后端
+├── 02 LLM 基础
+│   └── (通用，与语言无关)
+├── 03 Prompt 工程
+│   └── (通用，与语言无关)
+├── 04 RAG 技术
+│   ├── Python 实现
+│   └── JS 实现
+├── 05 Agent 框架
+│   ├── LangChain (Python)
+│   └── LangChain.js
+└── 06 Agent 模式
+    └── (通用原理 + 两种实现)
+
+🔨 项目实战
+└── (按智能体类型分)</pre>
+      </div>
+      <div class="pros-cons" style="margin-top: 12px;">
+        <div class="pros"><h4>优点</h4><ul><li>避免重复，结构精简</li><li>方便对照两种实现</li></ul></div>
+        <div class="cons"><h4>缺点</h4><ul><li>学习路径不够线性</li><li>初学者可能困惑</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>理论实战分离制（推荐）</h3>
+      <p>理论知识按主题组织（去重），项目实战按类型分，路线差异通过标签体现</p>
+      <div class="mockup" style="margin-top: 12px; padding: 16px; font-size: 13px;">
+        <pre style="margin: 0; font-family: inherit; white-space: pre-wrap;">
+📖 理论知识
+├── 基础能力
+│   ├── Python 基础 [Python]
+│   └── Node.js 后端 [JS]
+├── LLM 核心
+│   ├── 模型原理 [通用]
+│   ├── API 调用 [Python] [JS]
+│   └── Prompt 工程 [通用]
+├── RAG 技术 [通用 + 实现标签]
+└── Agent 开发
+    ├── 框架对比 [通用]
+    ├── LangChain [Python]
+    ├── LangChain.js [JS]
+    └── 设计模式 [通用]
+
+🔨 项目实战
+├── 通用智能体
+│   └── 个人助理、办公助手...
+├── 工作流智能体
+│   └── 自动化、审批流程...
+└── 垂类智能体
+    └── 代码助手、教育助手...</pre>
+      </div>
+      <div class="pros-cons" style="margin-top: 12px;">
+        <div class="pros"><h4>优点</h4><ul><li>理论去重，实战聚焦</li><li>标签灵活区分路线</li><li>结构清晰不冗余</li></ul></div>
+        <div class="cons"><h4>缺点</h4><ul><li>需要良好的标签系统</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="margin-top: 24px; color: var(--text-muted); font-size: 14px;">
+  💡 推荐方案 C：理论按主题组织避免重复，用标签区分技术栈；项目实战独立成区，按智能体类型分类。
+</p>

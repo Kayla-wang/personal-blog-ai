@@ -1,0 +1,85 @@
+<h2>首页设计方案</h2>
+<p class="subtitle">简洁的入口，直达理论和实战两大板块</p>
+
+<div class="mockup" style="max-width: 800px; margin: 0 auto;">
+  <div class="mockup-header">首页预览</div>
+  <div class="mockup-body" style="padding: 0; background: var(--bg-primary);">
+
+    <!-- Nav -->
+    <div class="mock-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-bottom: 1px solid var(--border-subtle);">
+      <span style="font-weight: 600;">AI 学习笔记</span>
+      <div style="display: flex; gap: 24px; font-size: 14px;">
+        <span>理论知识</span>
+        <span>项目实战</span>
+        <span style="opacity: 0.5;">🔍</span>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div style="padding: 80px 24px; text-align: center;">
+      <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.6; margin-bottom: 16px;">Personal Learning Notes</p>
+      <h1 style="font-size: 36px; font-weight: 300; margin: 0 0 12px 0;">AI Agent 学习笔记</h1>
+      <p style="opacity: 0.7; margin-bottom: 32px;">理论知识 · 项目实战 · 持续学习</p>
+    </div>
+
+    <!-- Two Cards -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 0 24px 60px;">
+
+      <div style="border: 1px solid var(--border-subtle); border-radius: 8px; padding: 32px; transition: all 0.2s;">
+        <div style="font-size: 32px; margin-bottom: 16px;">📖</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 18px;">理论知识</h3>
+        <p style="font-size: 14px; opacity: 0.7; margin: 0 0 20px 0; line-height: 1.6;">
+          系统化的学习笔记，涵盖 LLM 基础、Prompt 工程、RAG、Agent 框架与设计模式
+        </p>
+        <div style="font-size: 12px; opacity: 0.5;">
+          Python · Node.js · 双路线
+        </div>
+      </div>
+
+      <div style="border: 1px solid var(--border-subtle); border-radius: 8px; padding: 32px; transition: all 0.2s;">
+        <div style="font-size: 32px; margin-bottom: 16px;">🔨</div>
+        <h3 style="margin: 0 0 8px 0; font-size: 18px;">项目实战</h3>
+        <p style="font-size: 14px; opacity: 0.7; margin: 0 0 20px 0; line-height: 1.6;">
+          从理论到实践，通过真实项目巩固学习成果
+        </p>
+        <div style="font-size: 12px; opacity: 0.5;">
+          通用智能体 · 工作流 · 垂类应用
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer hint -->
+    <div style="text-align: center; padding: 20px; font-size: 13px; opacity: 0.5; border-top: 1px solid var(--border-subtle);">
+      专注 · 记录 · 成长
+    </div>
+
+  </div>
+</div>
+
+<div style="margin-top: 32px;">
+  <h3>设计要点</h3>
+  <ul style="font-size: 14px; line-height: 1.8; opacity: 0.85;">
+    <li><strong>极简风格</strong> — 去掉当前首页失效的博客/标签链接，只保留两个核心入口</li>
+    <li><strong>双卡片布局</strong> — 理论知识 + 项目实战，对应学习的两个维度</li>
+    <li><strong>导航精简</strong> — 顶部只有：理论知识、项目实战、搜索</li>
+    <li><strong>标签提示</strong> — 卡片底部简要说明内容范围</li>
+  </ul>
+</div>
+
+<div class="options" style="margin-top: 32px;">
+  <div class="option" data-choice="approve" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content">
+      <h3>确认这个首页设计</h3>
+      <p>继续下一部分</p>
+    </div>
+  </div>
+  <div class="option" data-choice="modify" onclick="toggleSelect(this)">
+    <div class="letter">✎</div>
+    <div class="content">
+      <h3>需要调整</h3>
+      <p>在终端告诉我你的想法</p>
+    </div>
+  </div>
+</div>

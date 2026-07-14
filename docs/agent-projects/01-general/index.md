@@ -19,9 +19,9 @@ tags: [通用智能体, 项目]
 
 | 项目 | 难度 | 核心技术 | 学习重点 |
 |------|------|----------|----------|
-| [个人 AI 助理](./01-personal-assistant/) | ⭐⭐ | LangChain.js + React | Agent 基础、工具调用 |
-| [通用办公助手](./02-office-assistant/) | ⭐⭐⭐ | LangGraph.js + RAG | 文档处理、流程编排 |
-| [多任务自动化引擎](./03-automation-engine/) | ⭐⭐⭐⭐ | Multi-Agent + MCP | MCP 协议、跨系统集成 |
+| [个人 AI 助理](./01-personal-assistant.md) | ⭐⭐ | LangChain.js + React | Agent 基础、工具调用 |
+| 通用办公助手(规划中) | ⭐⭐⭐ | LangGraph.js + RAG | 文档处理、流程编排 |
+| 多任务自动化引擎(规划中) | ⭐⭐⭐⭐ | Multi-Agent + MCP | MCP 协议、跨系统集成 |
 
 ## 技术选型建议
 

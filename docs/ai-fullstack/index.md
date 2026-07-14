@@ -36,15 +36,15 @@ tags: [AI, 全栈, Node.js, LangChain.js]
 
 | 阶段 | 模块 | 核心内容 | 预计时间 |
 |------|------|----------|----------|
-| 基础层 | [Node.js 后端](./01-nodejs-backend/) | Nest.js、HTTP协议、异步编程、数据库 | 2-3 周 |
-| 基础层 | [大模型基础](./02-llm-basics/) | 模型原理、API调用、Prompt工程基础 | 1-2 周 |
-| AI层 | [LangChain.js](./03-langchainjs/) | 模型调用、工具系统、记忆模块 | 2-3 周 |
-| AI层 | [LangGraph.js](./04-langgraphjs/) | 状态管理、图编排、推理循环 | 2 周 |
-| 应用层 | [Agent 核心原理](./05-agent-core/) | ReAct范式、工具调用、记忆管理 | 2 周 |
-| 应用层 | [Agent 项目实战](./06-agent-project/) | 从需求分析到部署上线 | 3-4 周 |
-| 进阶层 | [多智能体系统](./07-multi-agent/) | 协作模式、任务分解、通信机制 | 2-3 周 |
-| 进阶层 | [RAG 技术](./08-rag/) | 文档处理、向量检索、混合搜索 | 2 周 |
-| 进阶层 | [模型微调](./09-fine-tuning/) | 数据准备、训练流程、评估优化 | 2-3 周 |
+| 基础层 | [Node.js 后端](./01-nodejs-backend/index.md) | Nest.js、HTTP协议、异步编程、数据库 | 2-3 周 |
+| 基础层 | [大模型基础](./02-llm-basics/index.md) | 模型原理、API调用、Prompt工程基础 | 1-2 周 |
+| AI层 | [LangChain.js](./03-langchainjs/index.md) | 模型调用、工具系统、记忆模块 | 2-3 周 |
+| AI层 | [LangGraph.js](./04-langgraphjs/index.md) | 状态管理、图编排、推理循环 | 2 周 |
+| 应用层 | [Agent 核心原理](./05-agent-core/index.md) | ReAct范式、工具调用、记忆管理 | 2 周 |
+| 应用层 | [Agent 项目实战](./06-agent-project/index.md) | 从需求分析到部署上线 | 3-4 周 |
+| 进阶层 | [多智能体系统](./07-multi-agent/index.md) | 协作模式、任务分解、通信机制 | 2-3 周 |
+| 进阶层 | RAG 技术(规划中) | 文档处理、向量检索、混合搜索 | 2 周 |
+| 进阶层 | 模型微调(规划中) | 数据准备、训练流程、评估优化 | 2-3 周 |
 
 ## 各层详细说明
 

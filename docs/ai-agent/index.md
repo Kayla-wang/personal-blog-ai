@@ -25,15 +25,15 @@ LLM 基础 ────┘                                  │
 
 | 阶段 | 模块 | 核心内容 | 预计时间 |
 |------|------|----------|----------|
-| 基础 | [Python 基础](./01-python-basics/) | asyncio、数据处理、包管理 | 1-2 周 |
-| 基础 | [LLM 基础](./02-llm-fundamentals/) | 模型调用、参数理解、成本优化 | 1 周 |
-| 核心 | [Prompt 工程](./03-prompt-engineering/) | System Prompt、CoT、ReAct | 2 周 |
-| 核心 | [RAG 技术](./04-rag/) | 文档处理、向量检索、重排序 | 2-3 周 |
-| 核心 | [Agent 框架](./05-agent-frameworks/) | LangChain、LangGraph、Dify | 2-3 周 |
-| 核心 | [Agent 设计模式](./06-agent-patterns/) | 单/多 Agent、Memory、Tool | 2 周 |
-| 工程 | [后端与部署](./07-backend-deploy/) | FastAPI、Docker、云服务 | 1-2 周 |
-| 工程 | [评估与调优](./08-evaluation/) | Tracing、测试、成本优化 | 1 周 |
-| 工程 | [产品与工程](./09-product-engineering/) | 对话设计、安全、观测 | 1 周 |
+| 基础 | [Python 基础](./01-python-basics/01-syntax-and-types.md) | asyncio、数据处理、包管理 | 1-2 周 |
+| 基础 | [LLM 基础](./02-llm-fundamentals/01-models-overview.md) | 模型调用、参数理解、成本优化 | 1 周 |
+| 核心 | [Prompt 工程](./03-prompt-engineering/01-system-prompt.md) | System Prompt、CoT、ReAct | 2 周 |
+| 核心 | [RAG 技术](./04-rag/01-document-processing.md) | 文档处理、向量检索、重排序 | 2-3 周 |
+| 核心 | [Agent 框架](./05-agent-frameworks/01-langchain.md) | LangChain、LangGraph、Dify | 2-3 周 |
+| 核心 | [Agent 设计模式](./06-agent-patterns/01-single-agent.md) | 单/多 Agent、Memory、Tool | 2 周 |
+| 工程 | [后端与部署](./07-backend-deploy/01-fastapi.md) | FastAPI、Docker、云服务 | 1-2 周 |
+| 工程 | [评估与调优](./08-evaluation/01-tracing.md) | Tracing、测试、成本优化 | 1 周 |
+| 工程 | [产品与工程](./09-product-engineering/01-conversation-design.md) | 对话设计、安全、观测 | 1 周 |
 
 ## 学习建议
 

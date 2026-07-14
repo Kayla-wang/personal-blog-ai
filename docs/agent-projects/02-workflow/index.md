@@ -19,9 +19,9 @@ tags: [工作流, 自动化, 项目]
 
 | 项目 | 难度 | 核心技术 | 学习重点 |
 |------|------|----------|----------|
-| [后端自动化平台](./01-backend-automation/) | ⭐⭐⭐ | Node.js + Cron | 定时任务、数据管道 |
-| [前端自动化工具](./02-frontend-automation/) | ⭐⭐⭐ | Playwright + AI | 浏览器自动化、测试生成 |
-| [企业审批流程引擎](./03-approval-engine/) | ⭐⭐⭐⭐ | LangGraph.js + 状态机 | 流程建模、人机协作 |
+| [后端自动化平台](./01-backend-automation.md) | ⭐⭐⭐ | Node.js + Cron | 定时任务、数据管道 |
+| [前端自动化工具](./02-frontend-automation.md) | ⭐⭐⭐ | Playwright + AI | 浏览器自动化、测试生成 |
+| 企业审批流程引擎(规划中) | ⭐⭐⭐⭐ | LangGraph.js + 状态机 | 流程建模、人机协作 |
 
 ## 应用场景
 

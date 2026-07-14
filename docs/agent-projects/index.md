@@ -37,9 +37,9 @@ tags: [Agent, 项目实战, 智能体]
 
 | 项目 | 难度 | 技术栈 | 预计时间 |
 |------|------|--------|----------|
-| [个人 AI 助理](./01-general/01-personal-assistant/) | ⭐⭐ | LangChain.js + React | 2 周 |
-| [通用办公助手](./01-general/02-office-assistant/) | ⭐⭐⭐ | LangGraph.js + Nest.js | 3 周 |
-| [多任务自动化引擎](./01-general/03-automation-engine/) | ⭐⭐⭐⭐ | Multi-Agent + MCP | 4 周 |
+| [个人 AI 助理](./01-general/01-personal-assistant.md) | ⭐⭐ | LangChain.js + React | 2 周 |
+| 通用办公助手(规划中) | ⭐⭐⭐ | LangGraph.js + Nest.js | 3 周 |
+| 多任务自动化引擎(规划中) | ⭐⭐⭐⭐ | Multi-Agent + MCP | 4 周 |
 
 #### 1.1 个人 AI 助理
 - **功能**：日程管理、待办提醒、信息检索、生活服务、旅行规划
@@ -73,9 +73,9 @@ tags: [Agent, 项目实战, 智能体]
 
 | 项目 | 难度 | 技术栈 | 预计时间 |
 |------|------|--------|----------|
-| [后端自动化平台](./02-workflow/01-backend-automation/) | ⭐⭐⭐ | Node.js + Cron | 3 周 |
-| [前端自动化工具](./02-workflow/02-frontend-automation/) | ⭐⭐⭐ | Playwright + AI | 3 周 |
-| [企业审批流程引擎](./02-workflow/03-approval-engine/) | ⭐⭐⭐⭐ | LangGraph.js + 状态机 | 4 周 |
+| [后端自动化平台](./02-workflow/01-backend-automation.md) | ⭐⭐⭐ | Node.js + Cron | 3 周 |
+| [前端自动化工具](./02-workflow/02-frontend-automation.md) | ⭐⭐⭐ | Playwright + AI | 3 周 |
+| 企业审批流程引擎(规划中) | ⭐⭐⭐⭐ | LangGraph.js + 状态机 | 4 周 |
 
 #### 2.1 后端自动化平台
 - **功能**：数据同步、报表生成、邮件发送、定时任务、数据库备份
@@ -109,10 +109,10 @@ tags: [Agent, 项目实战, 智能体]
 
 | 项目 | 难度 | 技术栈 | 预计时间 |
 |------|------|--------|----------|
-| [代码助手](./03-vertical/01-code-assistant/) | ⭐⭐⭐ | LangChain.js + AST | 3 周 |
-| [医疗问诊助手](./03-vertical/02-medical-assistant/) | ⭐⭐⭐⭐ | RAG + 知识图谱 | 4 周 |
-| [金融分析助手](./03-vertical/03-finance-assistant/) | ⭐⭐⭐⭐ | 数据分析 + 可视化 | 4 周 |
-| [教育辅导助手](./03-vertical/04-education-assistant/) | ⭐⭐⭐ | 自适应学习 + 评估 | 3 周 |
+| [代码助手](./03-vertical/01-code-assistant.md) | ⭐⭐⭐ | LangChain.js + AST | 3 周 |
+| 医疗问诊助手(规划中) | ⭐⭐⭐⭐ | RAG + 知识图谱 | 4 周 |
+| 金融分析助手(规划中) | ⭐⭐⭐⭐ | 数据分析 + 可视化 | 4 周 |
+| 教育辅导助手(规划中) | ⭐⭐⭐ | 自适应学习 + 评估 | 3 周 |
 
 #### 3.1 代码助手
 - **功能**：代码生成、代码审查、Bug 修复、文档生成、项目脚手架

@@ -12,7 +12,7 @@ function HomepageHero() {
         <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
         <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
         <div className={styles.heroCta}>
-          <Link className={styles.ctaButton} to="/docs/ai-agent">
+          <Link className={styles.ctaButton} to="/notes/ai-agent">
             <span>开始阅读</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -44,9 +44,9 @@ function NavigationCard({ to, title, description, index }) {
 
 function HomepageNavigation() {
   const navItems = [
-    { to: '/docs/ai-agent', title: '文档', description: '系统化的学习资料与技术笔记' },
-    { to: '/blog', title: '博客', description: '记录思考与经验的时间线' },
-    { to: '/docs/tags', title: '标签', description: '按主题快速检索内容' },
+    { to: '/notes/ai-agent', title: '学习笔记', description: '系统化的学习资料与技术笔记' },
+    { to: '/projects', title: '项目实践', description: '从需求到部署的项目实战' },
+    { to: '/notes/tags', title: '标签', description: '按主题快速检索内容' },
   ];
 
   return (

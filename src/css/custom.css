@@ -1,90 +1,114 @@
 /*
- * 简洁主题 - Clean Minimal
- * 核心：留白 · 高对比 · 克制 · 清爽
+ * 掘金风主题 - Juejin Style
+ * 核心：浅灰底 · 白色卡片 · 蓝色主色 · 无衬线 · 克制阴影
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
 
 :root {
-  /* 色彩系统 - 冷白与天蓝 */
-  --zen-ink: #1a1a1a;
-  --zen-ink-light: #3d3d3d;
-  --zen-ink-muted: #64748b;
-  --zen-paper: #f8fafc;
-  --zen-paper-warm: #f1f5f9;
+  /* 文本 */
+  --zen-ink: #252933;
+  --zen-ink-light: #515767;
+  --zen-ink-muted: #8a919f;
+
+  /* 表面与背景 */
+  --zen-bg: #ffffff;          /* 页面白底 */
+  --zen-paper: #ffffff;       /* 卡片/导航/输入等白色表面 */
+  --zen-paper-warm: #f4f5f6;  /* 次级浅灰：hover、代码、标签等小色块 */
+
+  /* 主色 - 掘金蓝 */
   --zen-accent: #1e80ff;
-  --zen-accent-soft: #e0f2fe;
-  --zen-border: rgba(26, 26, 26, 0.08);
-  --zen-border-strong: rgba(26, 26, 26, 0.15);
+  --zen-accent-hover: #1171ee;
+  --zen-accent-soft: #eaf2ff;
+
+  /* 边框 */
+  --zen-border: #e4e6eb;
+  --zen-border-strong: #d0d3d9;
 
   /* Docusaurus 变量映射 */
-  --ifm-color-primary: var(--zen-accent);
-  --ifm-color-primary-dark: #1a73e8;
-  --ifm-color-primary-darker: #1666d1;
-  --ifm-color-primary-darkest: #1259b3;
-  --ifm-color-primary-light: #4a9aff;
-  --ifm-color-primary-lighter: #6eadff;
+  --ifm-color-primary: #1e80ff;
+  --ifm-color-primary-dark: #1171ee;
+  --ifm-color-primary-darker: #106bdf;
+  --ifm-color-primary-darkest: #0d58b8;
+  --ifm-color-primary-light: #3d92ff;
+  --ifm-color-primary-lighter: #5aa2ff;
   --ifm-color-primary-lightest: #a3cbff;
 
-  --ifm-background-color: var(--zen-paper);
-  --ifm-background-surface-color: var(--zen-paper-warm);
+  --ifm-background-color: var(--zen-bg);
+  --ifm-background-surface-color: var(--zen-paper);
   --ifm-font-color-base: var(--zen-ink);
   --ifm-font-color-secondary: var(--zen-ink-muted);
+  --ifm-navbar-background-color: var(--zen-paper);
+  --ifm-navbar-shadow: none;
+  --ifm-link-color: var(--zen-accent);
+  --ifm-link-hover-color: var(--zen-accent-hover);
+  --ifm-menu-color-active: var(--zen-accent);
+  --ifm-toc-border-color: transparent;
 
-  /* 字体系统 */
-  --ifm-font-family-base: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
-  --ifm-heading-font-family: 'Noto Serif SC', Georgia, serif;
+  /* 字体系统 - 全站无衬线 */
+  --ifm-font-family-base: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
   --ifm-font-weight-normal: 400;
-  --ifm-font-weight-bold: 600;
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-bold: 700;
+  --ifm-heading-font-weight: 600;
 
-  /* 间距节奏 */
+  /* 间距 */
   --ifm-spacing-horizontal: 1.5rem;
   --ifm-global-spacing: 1.5rem;
 
-  /* 圆角 - 克制 */
-  --ifm-global-radius: 4px;
-  --ifm-button-border-radius: 2px;
-  --ifm-card-border-radius: 6px;
+  /* 圆角 - 掘金偏圆润 */
+  --ifm-global-radius: 6px;
+  --ifm-button-border-radius: 6px;
+  --ifm-card-border-radius: 8px;
 
   /* 代码 */
   --ifm-code-font-size: 0.9rem;
+  --ifm-code-background: var(--zen-paper-warm);
   --docusaurus-highlighted-code-line-bg: rgba(30, 128, 255, 0.1);
 
-  /* 阴影 - 轻柔 */
+  /* 阴影 - 掘金克制 */
   --zen-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --zen-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
-  --zen-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --zen-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --zen-shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
-  --zen-ink: #e8eaed;
-  --zen-ink-light: #c4c7cc;
-  --zen-ink-muted: #8a8e94;
-  --zen-paper: #0f1419;
-  --zen-paper-warm: #1a1f26;
-  --zen-accent: #4a9aff;
-  --zen-accent-soft: #1a2a3d;
-  --zen-border: rgba(255, 255, 255, 0.06);
-  --zen-border-strong: rgba(255, 255, 255, 0.12);
+  --zen-ink: rgba(255, 255, 255, 0.9);
+  --zen-ink-light: rgba(255, 255, 255, 0.68);
+  --zen-ink-muted: rgba(255, 255, 255, 0.45);
 
-  --ifm-color-primary: var(--zen-accent);
+  --zen-bg: #121212;
+  --zen-paper: #1a1a1a;
+  --zen-paper-warm: #242424;
+
+  --zen-accent: #4593ff;
+  --zen-accent-hover: #6aa8ff;
+  --zen-accent-soft: rgba(30, 128, 255, 0.16);
+
+  --zen-border: #2e2e30;
+  --zen-border-strong: #3a3a3d;
+
+  --ifm-color-primary: #4593ff;
   --ifm-color-primary-dark: #1e80ff;
-  --ifm-color-primary-darker: #1a73e8;
-  --ifm-color-primary-darkest: #1666d1;
-  --ifm-color-primary-light: #6eadff;
-  --ifm-color-primary-lighter: #a3cbff;
-  --ifm-color-primary-lightest: #d1e5ff;
+  --ifm-color-primary-darker: #1171ee;
+  --ifm-color-primary-darkest: #0d58b8;
+  --ifm-color-primary-light: #6aa8ff;
+  --ifm-color-primary-lighter: #8dbdff;
+  --ifm-color-primary-lightest: #bcd8ff;
 
-  --ifm-background-color: var(--zen-paper);
-  --ifm-background-surface-color: var(--zen-paper-warm);
+  --ifm-background-color: var(--zen-bg);
+  --ifm-background-surface-color: var(--zen-paper);
   --ifm-font-color-base: var(--zen-ink);
   --ifm-font-color-secondary: var(--zen-ink-muted);
+  --ifm-navbar-background-color: var(--zen-paper);
+  --ifm-code-background: var(--zen-paper-warm);
 
-  --docusaurus-highlighted-code-line-bg: rgba(30, 128, 255, 0.15);
+  --docusaurus-highlighted-code-line-bg: rgba(69, 147, 255, 0.15);
 
-  --zen-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --zen-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
-  --zen-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --zen-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --zen-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --zen-shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* ============================================
@@ -98,28 +122,30 @@ html {
 }
 
 body {
-  background: var(--zen-paper);
+  background: var(--zen-bg);
   transition: background-color 0.3s ease;
 }
 
-/* 选中文本样式 */
+#__docusaurus {
+  border: none;
+  padding: 0;
+}
+
 ::selection {
   background: var(--zen-accent-soft);
-  color: var(--zen-ink);
+  color: var(--zen-accent-hover);
 }
 
 /* ============================================
-   导航栏 - 轻量透气
+   导航栏 - 通栏纯白
    ============================================ */
 
 .navbar {
-  background: transparent;
-  box-shadow: none;
-  border-bottom: 1px solid var(--zen-border);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 0.25rem 0;
-  transition: all 0.3s ease;
+  background: var(--zen-paper);
+  box-shadow: var(--zen-shadow-sm);
+  border-bottom: none;
+  padding: 0;
+  transition: background-color 0.3s ease;
 }
 
 .navbar > .container,
@@ -128,11 +154,7 @@ body {
 }
 
 .navbar--fixed-top {
-  background: rgba(248, 250, 252, 0.85);
-}
-
-[data-theme='dark'] .navbar--fixed-top {
-  background: rgba(15, 20, 25, 0.85);
+  background: var(--zen-paper);
 }
 
 @media (max-width: 996px) {
@@ -142,51 +164,55 @@ body {
   }
 }
 
+.navbar__brand {
+  margin: 1rem;
+}
+
 .navbar__title {
-  font-family: var(--ifm-heading-font-family);
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+  color: var(--zen-ink);
 }
 
 .navbar__link {
-  font-weight: 400;
-  font-size: 0.9rem;
-  letter-spacing: 0.01em;
-  opacity: 0.75;
-  transition: opacity 0.2s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--zen-ink-light);
+  position: relative;
+  transition: color 0.2s ease;
 }
 
 .navbar__link:hover,
 .navbar__link--active {
-  opacity: 1;
-  color: var(--zen-ink);
+  color: var(--zen-accent);
 }
 
 .navbar__link--active::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -0.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 3px;
   background: var(--zen-accent);
-  border-radius: 50%;
+  border-radius: 3px;
 }
 
-/* 搜索框优化 */
+/* 搜索框 */
 .navbar .DocSearch-Button {
   background: var(--zen-paper-warm);
-  border: 1px solid var(--zen-border);
-  border-radius: 4px;
-  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 0 14px;
   transition: all 0.2s ease;
 }
 
 .navbar .DocSearch-Button:hover {
-  border-color: var(--zen-border-strong);
-  box-shadow: var(--zen-shadow-sm);
+  border-color: var(--zen-accent);
+  box-shadow: none;
+  background: var(--zen-paper);
 }
 
 /* ============================================
@@ -194,7 +220,7 @@ body {
    ============================================ */
 
 .footer {
-  background: transparent;
+  background: var(--zen-paper);
   border-top: 1px solid var(--zen-border);
   padding: 2rem 0;
 }
@@ -206,80 +232,100 @@ body {
 }
 
 /* ============================================
-   文档内容 - 优雅排版
+   文档内容 - 灰底白卡
    ============================================ */
 
+.theme-doc-markdown {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+@media (max-width: 996px) {
+  .theme-doc-markdown {
+    padding: 1.25rem 1.25rem;
+  }
+}
+
 .markdown {
-  --ifm-heading-font-weight: 600;
-  line-height: 1.8;
+  line-height: 1.75;
   letter-spacing: 0.01em;
 }
 
 .markdown h1 {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   letter-spacing: -0.01em;
   line-height: 1.3;
+  color: var(--zen-ink);
 }
 
 .markdown h2 {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--zen-border);
+  color: var(--zen-ink);
 }
 
 .markdown h3 {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1.75rem;
+  color: var(--zen-ink);
 }
 
 .markdown p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
   color: var(--zen-ink-light);
 }
 
 .markdown a {
-  color: var(--zen-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--zen-accent);
-  text-underline-offset: 3px;
-  text-decoration-thickness: 2px;
-  transition: text-decoration-color 0.2s ease;
+  color: var(--zen-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .markdown a:hover {
-  text-decoration-color: var(--zen-ink);
+  color: var(--zen-accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .markdown blockquote {
-  border-left: 3px solid var(--zen-accent);
+  border-left: 4px solid var(--zen-accent);
   background: var(--zen-paper-warm);
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   margin: 1.5rem 0;
-  font-style: italic;
-  color: var(--zen-ink-muted);
+  color: var(--zen-ink-light);
+  border-radius: 0 6px 6px 0;
 }
 
 .markdown code {
   background: var(--zen-paper-warm);
-  border: 1px solid var(--zen-border);
   padding: 0.15rem 0.4rem;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 0.88em;
+  color: #d63384;
+}
+
+[data-theme='dark'] .markdown code {
+  color: #ff85b3;
 }
 
 .markdown pre {
-  border: 1px solid var(--zen-border);
-  border-radius: 6px;
-  box-shadow: var(--zen-shadow-sm);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.markdown pre code {
+  border: none;
+  color: inherit;
 }
 
 .markdown ul,
@@ -288,7 +334,7 @@ body {
 }
 
 .markdown li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   color: var(--zen-ink-light);
 }
 
@@ -296,128 +342,70 @@ body {
   color: var(--zen-accent);
 }
 
+/* 表格 - 掘金风，撑满容器宽度 */
+.markdown table {
+  display: table;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--zen-border);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.markdown table thead {
+  background: var(--zen-paper-warm);
+}
+
+.markdown table th,
+.markdown table td {
+  border: none;
+  border-bottom: 1px solid var(--zen-border);
+}
+
 /* ============================================
-   侧边栏 - 清爽
+   侧边栏 - 白色面板
    ============================================ */
+
+.theme-doc-sidebar-container {
+  background: var(--zen-paper);
+  border-right: none;
+}
 
 .menu {
   font-size: 0.9rem;
-  padding: 0.75rem 0;
+  padding: 0.75rem;
 }
 
 .menu__link {
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 0.5rem 0.75rem;
+  color: var(--zen-ink-light);
   transition: all 0.15s ease;
 }
 
 .menu__link:hover {
   background: var(--zen-paper-warm);
+  color: var(--zen-ink);
 }
 
 .menu__link--active {
   background: var(--zen-accent-soft);
-  color: var(--zen-ink);
-  font-weight: 500;
+  color: var(--zen-accent);
+  font-weight: 600;
 }
 
 .menu__list-item-collapsible:hover {
+  background: var(--zen-paper-warm);
+  border-radius: 6px;
+}
+
+.menu__caret:hover {
   background: transparent;
 }
 
-.theme-doc-sidebar-container {
-  border-right: 1px solid var(--zen-border);
-}
-
 /* ============================================
-   按钮 - 克制优雅
-   ============================================ */
-
-.button {
-  font-family: var(--ifm-font-family-base);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  border-radius: 2px;
-  transition: all 0.2s ease;
-}
-
-.button--primary {
-  background: var(--zen-ink);
-  border: none;
-  color: var(--zen-paper);
-}
-
-.button--primary:hover {
-  background: var(--zen-ink-light);
-  color: var(--zen-paper);
-}
-
-[data-theme='dark'] .button--primary {
-  background: var(--zen-accent);
-  color: var(--zen-paper);
-}
-
-[data-theme='dark'] .button--primary:hover {
-  background: var(--ifm-color-primary-light);
-}
-
-.button--outline {
-  border: 1px solid var(--zen-border-strong);
-  color: var(--zen-ink);
-}
-
-.button--outline:hover {
-  background: var(--zen-paper-warm);
-  border-color: var(--zen-ink-muted);
-}
-
-/* ============================================
-   标签 - 简约
-   ============================================ */
-
-.tag {
-  font-size: 0.75rem;
-  letter-spacing: 0.03em;
-  padding: 0.25rem 0.6rem;
-  border-radius: 2px;
-  background: var(--zen-paper-warm);
-  border: 1px solid var(--zen-border);
-  color: var(--zen-ink-muted);
-  transition: all 0.15s ease;
-}
-
-.tag:hover {
-  border-color: var(--zen-accent);
-  color: var(--zen-ink);
-}
-
-/* ============================================
-   博客列表
-   ============================================ */
-
-.blog-list-page article {
-  border-bottom: 1px solid var(--zen-border);
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-}
-
-.blog-list-page article:last-child {
-  border-bottom: none;
-}
-
-article header h2 a {
-  font-family: var(--ifm-heading-font-family);
-  color: var(--zen-ink);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-article header h2 a:hover {
-  color: var(--zen-accent);
-}
-
-/* ============================================
-   TOC 目录
+   目录 TOC
    ============================================ */
 
 .table-of-contents {
@@ -433,41 +421,142 @@ article header h2 a:hover {
 
 .table-of-contents__link:hover,
 .table-of-contents__link--active {
-  color: var(--zen-ink);
+  color: var(--zen-accent);
 }
 
 .table-of-contents__link--active {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* ============================================
-   Admonitions 提示框
+   面包屑与分页
+   ============================================ */
+
+.pagination-nav__link {
+  background: var(--zen-paper);
+  border: 1px solid var(--zen-border);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--zen-accent);
+  box-shadow: var(--zen-shadow-sm);
+}
+
+.pagination-nav__sublabel {
+  color: var(--zen-ink-muted);
+}
+
+.pagination-nav__label {
+  color: var(--zen-ink);
+}
+
+/* ============================================
+   按钮 - 蓝色主色
+   ============================================ */
+
+.button {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.button--primary {
+  background: var(--zen-accent);
+  border: none;
+  color: #fff;
+}
+
+.button--primary:hover {
+  background: var(--zen-accent-hover);
+  color: #fff;
+}
+
+.button--outline {
+  border: 1px solid var(--zen-border-strong);
+  color: var(--zen-ink);
+  background: var(--zen-paper);
+}
+
+.button--outline:hover {
+  background: var(--zen-paper-warm);
+  border-color: var(--zen-accent);
+  color: var(--zen-accent);
+}
+
+/* ============================================
+   标签 chip
+   ============================================ */
+
+.tag,
+a.tag {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  background: var(--zen-paper-warm);
+  border: 1px solid transparent;
+  color: var(--zen-ink-light);
+  transition: all 0.15s ease;
+}
+
+.tag:hover,
+a.tag:hover {
+  background: var(--zen-accent-soft);
+  border-color: transparent;
+  color: var(--zen-accent);
+  text-decoration: none;
+}
+
+/* ============================================
+   Admonition 提示框
    ============================================ */
 
 .admonition {
-  border-radius: 6px;
-  border: 1px solid var(--zen-border);
+  border-radius: 8px;
+  border: none;
   box-shadow: none;
 }
 
 .admonition-heading h5 {
-  font-family: var(--ifm-font-family-base);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: none;
   letter-spacing: 0;
 }
 
 /* ============================================
-   搜索结果
+   卡片（分类索引页等）
+   ============================================ */
+
+.card {
+  background: var(--zen-paper);
+  border: 1px solid var(--zen-border);
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--zen-accent);
+  box-shadow: var(--zen-shadow-md);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   搜索结果高亮
    ============================================ */
 
 .search-result-match {
   background: var(--zen-accent-soft);
+  color: var(--zen-accent-hover);
   padding: 0 2px;
 }
 
 /* ============================================
-   滚动条美化
+   滚动条
    ============================================ */
 
 ::-webkit-scrollbar {
@@ -479,9 +568,14 @@ article header h2 a:hover {
   background: transparent;
 }
 
+/* 默认隐藏滑块，悬浮该区域时才显示 */
 ::-webkit-scrollbar-thumb {
-  background: var(--zen-border-strong);
+  background: transparent;
   border-radius: 3px;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background: var(--zen-border-strong);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -489,7 +583,7 @@ article header h2 a:hover {
 }
 
 /* ============================================
-   动画 - 微妙
+   动画
    ============================================ */
 
 @keyframes fadeInUp {
@@ -508,15 +602,72 @@ article header h2 a:hover {
 }
 
 /* ============================================
-   响应式优化
+   文档页三栏独立滚动（桌面端）
+   外层不滚动，左侧栏 / 中间内容各自内部滚动，
+   右侧 TOC 在中间滚动区内 sticky 保持可见
+   ============================================ */
+
+@media (min-width: 997px) {
+  html.docs-doc-page,
+  html.docs-doc-page body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  html.docs-doc-page #__docusaurus {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  html.docs-doc-page .main-wrapper {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  html.docs-doc-page [class*='docsWrapper'],
+  html.docs-doc-page [class*='docRoot'] {
+    min-height: 0;
+    height: 100%;
+  }
+
+  /* 左：侧边栏独立滚动 */
+  html.docs-doc-page .theme-doc-sidebar-container {
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  /* 中：内容区独立滚动（右侧 TOC 在其内 sticky） */
+  html.docs-doc-page [class*='docMainContainer'] {
+    min-width: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  /* 右：TOC 相对内容滚动区顶部吸附 */
+  html.docs-doc-page .theme-doc-toc-desktop {
+    top: 1rem;
+  }
+
+  /* 应用式布局：文档页隐藏底部页脚 */
+  html.docs-doc-page .footer {
+    display: none;
+  }
+}
+
+/* ============================================
+   响应式
    ============================================ */
 
 @media (max-width: 996px) {
   .markdown h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .markdown h2 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 }

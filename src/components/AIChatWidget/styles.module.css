@@ -15,15 +15,15 @@
    ============================================ */
 
 .toggleButton {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  border: 1px solid var(--zen-border-strong);
-  background: var(--zen-paper);
-  color: var(--zen-ink);
-  font-size: 20px;
+  border: none;
+  background: var(--zen-accent);
+  color: #fff;
+  font-size: 22px;
   cursor: pointer;
-  box-shadow: var(--zen-shadow-md);
+  box-shadow: 0 4px 14px rgba(30, 128, 255, 0.35);
   transition: all 0.25s ease;
   display: flex;
   align-items: center;
@@ -32,8 +32,8 @@
 
 .toggleButton:hover {
   transform: translateY(-2px);
-  box-shadow: var(--zen-shadow-lg);
-  border-color: var(--zen-accent);
+  background: var(--zen-accent-hover);
+  box-shadow: 0 8px 20px rgba(30, 128, 255, 0.4);
 }
 
 .toggleButton:active {
@@ -144,14 +144,9 @@
 
 .userMessage {
   align-self: flex-end;
-  background: var(--zen-ink);
-  color: var(--zen-paper);
-  border-radius: 12px 12px 2px 12px;
-}
-
-[data-theme='dark'] .userMessage {
   background: var(--zen-accent);
-  color: var(--zen-paper);
+  color: #fff;
+  border-radius: 12px 12px 2px 12px;
 }
 
 .assistantMessage {
@@ -245,31 +240,23 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  background: var(--zen-ink);
-  color: var(--zen-paper);
+  background: var(--zen-accent);
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .sendButton:hover:not(:disabled) {
-  background: var(--zen-ink-light);
+  background: var(--zen-accent-hover);
   transform: translateY(-1px);
 }
 
 .sendButton:disabled {
   opacity: 0.4;
   cursor: not-allowed;
-}
-
-[data-theme='dark'] .sendButton {
-  background: var(--zen-accent);
-}
-
-[data-theme='dark'] .sendButton:hover:not(:disabled) {
-  background: var(--ifm-color-primary-light);
 }
 
 /* ============================================

@@ -3,8 +3,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '博客',
-  tagline: '记录学习，分享知识',
+  title: 'AI 学习笔记',
+  tagline: '理论知识 · 项目实战 · 持续学习',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -77,17 +77,17 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: '博客',
+        title: 'AI 学习笔记',
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '学习笔记',
+            label: '理论知识',
           },
           {
             to: '/projects',
-            label: '项目实践',
+            label: '项目实战',
             position: 'left',
           },
         ],

@@ -1,5 +1,5 @@
 /*
- * 首页样式 - 日式极简
+ * 首页样式 - 掘金风
  */
 
 .main {
@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 2rem;
-  background: var(--zen-paper);
+  background: var(--zen-bg);
 }
 
 /* ============================================
@@ -17,20 +17,20 @@
 
 .hero {
   width: 100%;
-  max-width: 720px;
-  padding: 8rem 0 4rem;
+  max-width: 860px;
+  padding: 6rem 0 3rem;
   text-align: center;
   position: relative;
 }
 
 .heroInner {
-  animation: heroFadeIn 0.8s ease-out;
+  animation: heroFadeIn 0.7s ease-out;
 }
 
 @keyframes heroFadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -40,48 +40,32 @@
 
 .heroLabel {
   display: inline-block;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--zen-ink-muted);
+  color: var(--zen-accent);
+  background: var(--zen-accent-soft);
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
   margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.heroLabel::before,
-.heroLabel::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 24px;
-  height: 1px;
-  background: var(--zen-border-strong);
-}
-
-.heroLabel::before {
-  right: calc(100% + 12px);
-}
-
-.heroLabel::after {
-  left: calc(100% + 12px);
+  font-weight: 500;
 }
 
 .heroTitle {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   margin: 0 0 1rem;
   color: var(--zen-ink);
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .heroSubtitle {
   font-size: 1.1rem;
   color: var(--zen-ink-muted);
-  margin: 0 0 2.5rem;
-  font-weight: 300;
-  letter-spacing: 0.05em;
+  margin: 0 0 2.25rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 .heroCta {
@@ -92,23 +76,23 @@
 .ctaButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.875rem 1.75rem;
-  background: var(--zen-ink);
-  color: var(--zen-paper);
-  font-size: 0.9rem;
+  gap: 0.6rem;
+  padding: 0.8rem 1.75rem;
+  background: var(--zen-accent);
+  color: #fff;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 8px;
   transition: all 0.25s ease;
 }
 
 .ctaButton:hover {
-  background: var(--zen-ink-light);
-  color: var(--zen-paper);
+  background: var(--zen-accent-hover);
+  color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 16px rgba(30, 128, 255, 0.3);
 }
 
 .ctaButton svg {
@@ -119,26 +103,8 @@
   transform: translateX(4px);
 }
 
-[data-theme='dark'] .ctaButton {
-  background: var(--zen-accent);
-  color: var(--zen-paper);
-}
-
-[data-theme='dark'] .ctaButton:hover {
-  background: var(--ifm-color-primary-light);
-}
-
 .heroDecoration {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.heroLine {
-  width: 1px;
-  height: 48px;
-  background: linear-gradient(to bottom, var(--zen-border-strong), transparent);
+  display: none;
 }
 
 /* ============================================
@@ -147,54 +113,62 @@
 
 .navigation {
   width: 100%;
-  max-width: 720px;
-  padding: 4rem 0;
+  max-width: 860px;
+  padding: 1rem 0 4rem;
 }
 
 .navGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  background: var(--zen-border);
-  border: 1px solid var(--zen-border);
-  border-radius: 6px;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
 }
 
 .navCard {
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.5rem 2rem;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.75rem;
   background: var(--zen-paper);
+  border: 1px solid var(--zen-border);
+  border-radius: 12px;
+  box-shadow: var(--zen-shadow-md);
   text-decoration: none;
   color: var(--zen-ink);
-  transition: all 0.2s ease;
+  transition: all 0.22s ease;
   animation: cardSlideIn 0.5s ease-out both;
 }
 
 @keyframes cardSlideIn {
   from {
     opacity: 0;
-    transform: translateX(-10px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 .navCard:hover {
-  background: var(--zen-paper-warm);
   color: var(--zen-ink);
+  border-color: var(--zen-accent);
+  box-shadow: var(--zen-shadow-lg);
+  transform: translateY(-4px);
 }
 
 .navCardIndex {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--zen-accent);
-  font-weight: 600;
-  min-width: 24px;
+  background: var(--zen-accent-soft);
+  border-radius: 10px;
 }
 
 .navCardContent {
@@ -202,21 +176,25 @@
 }
 
 .navCardTitle {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin: 0 0 0.25rem;
+  margin: 0.15rem 0 0.5rem;
   letter-spacing: 0.01em;
+  color: var(--zen-ink);
 }
 
 .navCardDesc {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--zen-ink-muted);
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .navCardArrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
   color: var(--zen-ink-muted);
   opacity: 0;
   transform: translate(-4px, 4px);
@@ -237,8 +215,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
-  animation: footnoteFadeIn 0.8s ease-out 0.4s both;
+  padding: 2rem 0 4rem;
+  animation: footnoteFadeIn 0.8s ease-out 0.3s both;
 }
 
 @keyframes footnoteFadeIn {
@@ -252,14 +230,15 @@
 
 .footnoteLine {
   width: 32px;
-  height: 1px;
+  height: 2px;
   background: var(--zen-border-strong);
-  margin-bottom: 1.5rem;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
 }
 
 .footnoteText {
   font-size: 0.75rem;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.22em;
   color: var(--zen-ink-muted);
   margin: 0;
 }
@@ -270,24 +249,23 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 5rem 0 3rem;
+    padding: 4rem 0 2rem;
   }
 
   .heroTitle {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .heroSubtitle {
     font-size: 1rem;
   }
 
-  .navCard {
-    padding: 1.25rem 1.5rem;
-    gap: 1rem;
+  .navGrid {
+    grid-template-columns: 1fr;
   }
 
-  .navCardArrow {
-    display: none;
+  .navCard {
+    padding: 1.5rem;
   }
 }
 
@@ -297,12 +275,7 @@
   }
 
   .heroTitle {
-    font-size: 2rem;
-  }
-
-  .heroLabel::before,
-  .heroLabel::after {
-    display: none;
+    font-size: 1.9rem;
   }
 
   .ctaButton {

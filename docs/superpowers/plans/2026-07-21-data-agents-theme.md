@@ -75,9 +75,9 @@ tags: [数据智能体, Text-to-SQL, 数据可视化, 项目]
 
    | 项目 | 难度 | 技术栈 | 预计时间 |
    |------|------|--------|----------|
-   | [数据自动标签化](./01-auto-labeling.md) | ⭐⭐⭐ | LangChain.js + zod | 2 周 |
-   | [Text-to-SQL](./02-text-to-sql.md) | ⭐⭐⭐ | LangChain.js + SQLite | 3 周 |
-   | [数据可视化](./03-data-viz.md) | ⭐⭐⭐ | Vercel AI SDK + ECharts | 3 周 |
+   | 数据自动标签化 `./01-auto-labeling.md` | ⭐⭐⭐ | LangChain.js + zod | 2 周 |
+   | Text-to-SQL `./02-text-to-sql.md` | ⭐⭐⭐ | LangChain.js + SQLite | 3 周 |
+   | 数据可视化 `./03-data-viz.md` | ⭐⭐⭐ | Vercel AI SDK + ECharts | 3 周 |
 
 - [ ] **Step 3: 验证构建**
 
@@ -129,7 +129,7 @@ tags: [数据标签化, 结构化输出, LLM]
 
 - [ ] **Step 3: 写「架构设计」ASCII 图**
 
-`## 架构设计`，画出流水线：原始 reviews → 预处理/分批 → LLM 打标（带 taxonomy + schema）→ 置信度判定 →（低置信）人工复核 /（高置信）写回结构化字段。风格对齐 [01-code-assistant.md](../../../projects/03-vertical/01-code-assistant.md) 的 ASCII 图。
+`## 架构设计`，画出流水线：原始 reviews → 预处理/分批 → LLM 打标（带 taxonomy + schema）→ 置信度判定 →（低置信）人工复核 /（高置信）写回结构化字段。风格对齐 `projects/03-vertical/01-code-assistant.md` 的 ASCII 图。
 
 - [ ] **Step 4: 写「核心功能」代码片段**
 

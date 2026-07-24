@@ -21,3 +21,7 @@ synonyms:
   gmv: [销售额, 成交额, 卖得好]
   active_users: [活跃用户, 活跃用户数, 下单用户数]
   avg_order_value: [客单价, 平均订单金额]
+  # 维度中文同义词:Mapper 靠子串匹配已知词,自然语言里维度多为中文,需补齐
+  category: [品类, 类目]
+  region: [地区, 区域]
+  month: [月份]

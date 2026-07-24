@@ -1,0 +1,10 @@
+{"question": "各品类销售额最高的是哪个", "metric": "gmv", "check": {"field": "category", "value": "家居"}}
+{"question": "华东区总成交额", "metric": "gmv"}
+{"question": "一共有多少订单", "metric": "order_count"}
+{"question": "各地区的活跃用户数", "metric": "active_users"}
+{"question": "客单价是多少", "metric": "avg_order_value"}
+{"question": "华南和华北的销售额", "metric": "gmv"}
+{"question": "食品类目卖了多少钱", "metric": "gmv"}
+{"question": "按月份看成交额", "metric": "gmv"}
+{"question": "各品类的订单量", "metric": "order_count"}
+{"question": "华东区平均订单金额", "metric": "avg_order_value"}

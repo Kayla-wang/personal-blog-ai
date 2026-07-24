@@ -1,0 +1,23 @@
+entities:
+  order: { table: orders, primary_key: id }
+
+dimensions:
+  region:   { expr: region, values: [华东, 华南, 华北, 西南] }
+  category: { expr: category }
+  month:    { expr: month, type: time }
+
+measures:
+  gmv:          { expr: "SUM(amount)",             additivity: full }
+  order_count:  { expr: "COUNT(id)",               additivity: full }
+  active_users: { expr: "COUNT(DISTINCT user_id)", additivity: none }
+  avg_order_value:
+    type: ratio
+    numerator: "SUM(amount)"
+    denominator: "COUNT(id)"
+    additivity: none
+
+synonyms:
+  华东: [华东区, 长三角]
+  gmv: [销售额, 成交额, 卖得好]
+  active_users: [活跃用户, 活跃用户数, 下单用户数]
+  avg_order_value: [客单价, 平均订单金额]

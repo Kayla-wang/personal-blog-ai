@@ -1,6 +1,6 @@
 ---
 title: 数据自动标签化
-sidebar_position: 1
+sidebar_position: 3
 tags: [数据标签化, 结构化输出, LLM]
 ---
 

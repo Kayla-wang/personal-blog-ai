@@ -1,6 +1,6 @@
 ---
 title: 数据可视化
-sidebar_position: 3
+sidebar_position: 5
 tags: [数据可视化, ECharts, LLM]
 ---
 
@@ -23,7 +23,7 @@ tags: [数据可视化, ECharts, LLM]
 - 结构化输出：Vercel AI SDK（`generateObject`）+ zod（约束模型输出必须是合法的图表 spec）
 - 模型：OpenAI 兼容接口（Chat Completions）
 
-落地场景：把 [Text-to-SQL](./02-text-to-sql.md) 跑出来的查询结果（如"上个月各品类销售额 Top 5"）自动画成图——不需要用户额外说"帮我画个柱状图"，系统根据结果的数据形状自己判断该用什么图。
+落地场景：把 [Text-to-SQL](./04-text-to-sql.md) 跑出来的查询结果（如"上个月各品类销售额 Top 5"）自动画成图——不需要用户额外说"帮我画个柱状图"，系统根据结果的数据形状自己判断该用什么图。
 
 ## 架构设计
 

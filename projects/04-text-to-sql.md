@@ -1,6 +1,6 @@
 ---
 title: Text-to-SQL
-sidebar_position: 2
+sidebar_position: 4
 tags: [Text-to-SQL, 自然语言查询, LLM]
 ---
 
@@ -23,7 +23,7 @@ tags: [Text-to-SQL, 自然语言查询, LLM]
 - 示例数据库：SQLite（生产场景可换成 Postgres/MySQL，只读连接）
 - 模型：OpenAI 兼容接口（Chat Completions）
 
-落地场景：让运营同学用自然语言查电商 `orders` / `products`，例如「上个月各品类销售额 Top 5」，模型生成对应 SQL 并执行，把结果整理成一句话结论。[数据自动标签化](./01-auto-labeling.md) 打好标签的 `reviews`（如 sentiment、category）同样可以被查询，例如「最近负面评价最多的品类是哪些」。
+落地场景：让运营同学用自然语言查电商 `orders` / `products`，例如「上个月各品类销售额 Top 5」，模型生成对应 SQL 并执行，把结果整理成一句话结论。[数据自动标签化](./03-auto-labeling.md) 打好标签的 `reviews`（如 sentiment、category）同样可以被查询，例如「最近负面评价最多的品类是哪些」。
 
 ## 架构设计
 

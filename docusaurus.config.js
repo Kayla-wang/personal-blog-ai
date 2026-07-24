@@ -1,6 +1,8 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
+const isPages = process.env.DEPLOY_TARGET === 'pages';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AI 学习笔记',
@@ -11,11 +13,15 @@ const config = {
     v4: true,
   },
 
-  url: 'https://your-domain.com',
-  baseUrl: '/',
+  url: isPages ? 'https://kayla-wang.github.io' : 'https://your-domain.com',
+  baseUrl: isPages ? '/personal-blog-ai/' : '/',
 
-  organizationName: 'your-username',
-  projectName: 'blog',
+  organizationName: 'Kayla-wang',
+  projectName: 'personal-blog-ai',
+
+  customFields: {
+    enableChat: !isPages,
+  },
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
